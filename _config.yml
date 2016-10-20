@@ -1,0 +1,25 @@
+title: IN[SCI]TE
+name: IN[SCI]TE
+email: reaal@inscite.co
+baseurl: "/cambridge" # the subpath of your site, e.g. /blog
+url: "http://inscite.co" # the base hostname & protocol for your site
+phase: 1 # the phase of the current year's event
+
+# Navigation
+nav:
+  - name:           "committee"
+    href:           "/committee"
+  - name:           "sponsor"
+    href:           "/sponsor"
+  - name:           "talk"
+    href:           "/talk"
+  - name:           "attend"
+    href:           "/attend"
+  - name:           "contact"
+    href:           "/contact"
+        
+
+include: ['_pages']
+
+# Build settings
+markdown: kramdown
