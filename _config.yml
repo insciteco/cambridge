@@ -3,7 +3,13 @@ name: IN[SCI]TE
 email: it@cam.inscite.co
 baseurl: "/cambridge" # the subpath of your site, e.g. /blog
 url: "http://inscite.co" # the base hostname & protocol for your site
-phase: 1 # the phase of the current year's event
+phase: 2 # the phase of the current year's event
+
+# Phase 1 - Before speaker invitations
+# Phase 2 - Speaker invitations
+# Phase 3 - End of speaker invitations + Ticketing
+# Phase 4 - Right before event?
+# Phase 5 - Post-event
 
 # Navigation
 nav:
@@ -15,6 +21,8 @@ nav:
     href:           "/talk"
   - name:           "attend"
     href:           "/attend"
+  - name:           "2017"
+    href:           "/2017"
   - name:           "contact"
     href:           "/contact"
         
