@@ -4,6 +4,70 @@ title: 2017
 layout: inscite
 ---
 
+<link rel="stylesheet" href="schedule.css">
+<link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href="lightslider.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="lightslider.js"></script>
+<script>
+$(document).ready(function() {
+  $("#lightSlider").lightSlider({
+        item: 1,
+        autoWidth: false,
+        slideMove: 2, // slidemove will be 1 if loop is true
+        slideMargin: 5,
+
+        addClass: '',
+        mode: "slide",
+        useCSS: true,
+        cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+        easing: 'linear', //'for jquery animation',////
+
+        speed: 400, //ms'
+        auto: true,
+        pauseOnHover: true,
+        loop: false,
+        slideEndAnimation: true,
+        pause: 4000,
+
+        keyPress: false,
+        controls: false,
+        prevHtml: '',
+        nextHtml: '',
+
+        rtl:false,
+        adaptiveHeight:false,
+
+        vertical:false,
+        verticalHeight:900,
+        vThumbWidth:100,
+
+        thumbItem:1,
+        pager: true,
+        gallery: false,
+        galleryMargin: 5,
+        thumbMargin: 5,
+        currentPagerPosition: 'middle',
+
+        enableTouch:true,
+        enableDrag:true,
+        freeMove:true,
+        swipeThreshold: 40,
+
+        responsive : [],
+
+        onBeforeStart: function (el) {},
+        onSliderLoad: function (el) {},
+        onBeforeSlide: function (el) {},
+        onAfterSlide: function (el) {},
+        onBeforeNextSlide: function (el) {},
+        onBeforePrevSlide: function (el) {}
+    });
+
+});
+
+</script>
+
 {% if site.phase == 2 %}
 
 <div class="emphasize">
@@ -11,3 +75,671 @@ layout: inscite
 </div>
 
 {% endif %}
+
+<!--
+<div class="emphasize">
+  <h1 style="background-color:transparent;">Keynote Speakers</h1><br><br><br>
+
+  <div class="row">
+    <div class="col-md-6" style="text-align:justify;padding:0 30px;">
+      <center><h2>Professor Gero Miesenb&ouml;ck</h2></center><br><br>
+      <img src="{{ site.baseurl }}/img/attend/gero.jpg" style="width:300px;border-radius:500px;margin-left:calc(50% - 150px);"><br><br><br>
+      <p>
+
+      </p>
+    </div>
+
+    <div class="col-md-6" style="text-align:justify;padding:0 30px;">
+      <center><h2>Dr Ceri Brenner</h2></center><br><Br>
+      <img src="{{ site.baseurl }}/img/attend/ceri.jpg" style="width:300px;margin-right:20px;border-radius:500px;margin-left:calc(50% - 150px);"><br><br><br>
+      <p>
+
+      </p>
+    </div>
+  </div>
+</div>
+-->
+<div class="emphasize">
+  <h1>Event Details</h1>
+  <h3>
+    Date: 18-19th March 2017<br><br>
+    Time: 1000 - 1700<br><br>
+    Venue: Old Divinity School, University of Cambridge, St Johns St, Cambridge CB2 1TP
+  </h3>
+
+
+</div>
+<div class="emphasize" style="height:auto">
+    <h1 style="background-color:transparent;">Undergraduate Speakers</h1><br><br><br>
+<p>
+Over 15 undergraduate students from the University of Cambridge will be giving accessible talks on something they're passionate about.<br>
+These talks form the main part of the conference, and they're what IN[SCI]TE's all about.<br>
+We will be constantly updating this list of talks:
+</p>
+<div>
+    <ul id="lightSlider">
+
+        <li>
+          <h3>Tejal Shanbhag</h3>
+          <i>
+            Gas Cylinder Vibration Characterisation
+          </i>
+          <p>
+            Industrial gas cylinders experience high magnitude forces in service: impulsively from being dropped, or sustained oscillatory excitation from being transported by road. Modern cylinders are routinely fitted with delicate electronic components for remote monitoring. The aim of this project was to investigate the vibrational response of typical cylinders when excited impulsively; to identify the important modes and resonant frequencies; and to determine whether the vibration would damage the electronics. The experimental component involved performing drop tests in simulated ‘free-free’ boundary conditions, and analysing the resulting accelerometer and vibrometer Fourier spectra. The accompanying numerical work entailed simulating the same tests using Matlab finite element models. Additional tests were then undertaken: for example, the effect of partially closing the gas valve or partly filling the cylinders; the long term damage resulting from low and high frequencies; and simulating the cylinder's road profile response using Matlab.
+          </p>
+        </li>
+
+           <li>
+               <h3>Dillan Saunders</h3>
+               <i>
+                 Evolution and Development
+               </i>
+               <p>
+                 Evo-Devo as a discipline, what it is, its importance and a related topic of the difficulty of choosing model organisms. This relates directly to my part II project on developmental (Sox) gene expression in the centipede Strigamia maritima.
+               </p>
+           </li>
+
+           <li>
+               <h3>Sophie Gill</h3>
+               <i>
+                 Global Trends in Volcanic Arc Sulfur Outgassing
+               </i>
+               <p>
+                 Sulfur is a major element involved in surface biogeochemical processes. It exists in numerous redox states and cycles through all the planetary spheres (lithosphere, mantle, atmosphere, hydrosphere, biosphere). Sulfur is intrinsic to the evolution of the ocean-atmosphere system, having had a particularly big impact on ocean chemistry through geological time, and is linked to the carbon and oxygen cycles. My 4th year project investigated the sulfur cycle at subduction zones, where one tectonic plate is descending beneath another. Volcanoes in subduction zones emit the highest levels of sulfur dioxide gases of any tectonic setting. It has long been suspected that this could be due to the physical and chemical characteristics of the material subducting beneath the overlying plate. This project has shown that this is not likely to be the case, and the control on subduction zone volcanic emissions may be individual magma chamber dynamics. This has repercussions for decoupling of the sulfur and carbon cycles during subduction.
+               </p>
+           </li>
+
+           <li>
+               <h3>Maria Tang</h3>
+               <i>
+                 What distance metrics best model the spatial transmission of the
+                 2009 swine flu pandemic in the US?
+               </i>
+               <p>
+                 When modelling the transmission of the 2009 flu pandemic in the US, we need to consider what distance metric to use between locations. Such models have so far integrated only geographic great-circle distances to model the spatial dynamics. However, for a disease spread from human to human, it makes sense to try different distance metrics that represent actual human movement better, such as distances and times for driving, walking and public transport. Statistical analysis and model selection techniques are used with high-resolution disease onset data and a lot of common sense to evaluate the relevance of these metrics, and when they should be considered in general.
+               </p>
+           </li>
+
+           <li>
+               <h3>Michał Bączyk</h3>
+               <i>
+                 Bottle Oscillators - hydrodynamics, synchronisation theorem;
+                 Fun doing homemade science/research
+               </i>
+               <p>
+                 What is common for clocks, human hearts and... bottles full of
+                 water turned upside down? All of them exhibit oscillations! Together
+                 with my friend we have analysed in details "bottle oscillators" and
+                 obtained a mathematical model describing them. Next, we decided to
+                 make more complicated systems like two, three or even four bottles
+                 linked in a big marvelous oscillator! These "coupled oscillators" behave so strange that, astonishingly, it is not possible to determine their behaviour in a deterministic way.  If you are curious about incredible hydrodynamics and easy to understand but not intuitive theory of synchronisation, feel invited to come!
+               </p>
+           </li>
+
+           <li>
+               <h3>Aatif Syed</h3>
+               <i>
+                 Birmingham Children's Hospital - a model of how young people can
+                 shape science and research
+               </i>
+               <p>
+                 Aatif will be talking about his experiences with a volunteer group at Birmingham Children's Hospital. Taking you through a journey of the group's projects, he hopes to prove that involving laymen and especially children can add value when done right.
+               </p>
+           </li>
+
+           <li>
+               <h3>Patrick Lundgren</h3>
+               <i>
+                 Planetary Protection - the importance of microbial quantification
+               </i>
+               <p>
+                 Monitoring and determining the bioburden of spacecraft destined
+                 for other celestial bodies is essential to prevent forward contamination,
+                 which is the transmission of terrestrial microbes to extraterrestrial bodies.
+                 Such microbial transfer could obscure the possibility of understanding
+                 the origin and evolution of life in our solar system. When cultivation-based
+                 methods are employed only a small proportion of microbes can be accounted
+                 for and hence culture-independent molecular approaches are necessary to
+                 measure Viable Organisms (VOs). Traditionally, NASA Standard Spore Assay
+                 (NSA) was followed to validate cleanliness of spacecraft associated surfaces by measuring cultivable and heat-shock resistant microbes. However, since the vast majority of microbial cells cannot be characterized via the NSA, it is necessary to utilize state of the art molecular techniques to better understand the total, viable, and cultivable populations present in nutrient-deprived low biomass cleanrooms where spacecraft are assembled. Thus, contemporary molecular-based assays such as quantitative polymerase chain reaction (qPCR) with propidium monoazide (PMA) treatment and adenosine triphosphate (ATP) assay that targets intracellular ATP content of viable microbial cells were utilized to measure VOs. Using data from the NSA and cultivation-independent assays, the spore to VO ratio was generated from approximately 100 samples during this study. The resulting ratio will be used to estimate the viable microbial population on spacecraft surfaces via the traditional NSA spore measurements. The Mars 2020 mission, will bring a caching system to collect samples with the potential of being brought back to Earth for future analysis. Hence, developing statistically sound microbial burden analyses is essential.
+               </p>
+           </li>
+
+           <li>
+               <h3>Nick Kateris</h3>
+               <i>
+                 Aerosol Particle Coagulation CFD
+               </i>
+               <p>
+                 The atmosphere is full of solid and liquid particles, many of which are considered pollutants. As particles collide with one another, they coagulate. In my summer research project at the Cambridge University Engineering Department, I developed Computational Fluid Dynamics (CFD) code to model this phenomenon for atmospheric aerosols. Using OpenFOAM, a steady-state control volume solver was created to find the distribution of different sized particles, given an initial particle concentration and size distribution. Thermophoretic effects were also taken into account. This code was then combined with existing code that models the ionisation and recombination of particles under UV light. Even though the end product performs an accurate simulation, many problems had to be overcome and some improvements can still be implemented.
+               </p>
+           </li>
+
+           <li>
+               <h3>Mariana Alves</h3>
+               <i>
+                 Science Communication (Radio and other means) or Science Philosophy (Focus on Biases)
+               </i>
+               <p>
+                 The understanding of the permeability of science to values ​​(which include beliefs, prejudices, preferences, interests, convictions) is of utmost importance, whether in social sciences or natural sciences. On the one hand, because the interference of values ​​challenges the notion of objectivity of scientific knowledge, an issue that will always be an important subject of (scientific) debate. On the other hand, because science is being used more and more as a means of ideological instrumentation, legitimizing and enacting public policies. I will address the role of values ​​in natural science, which is currently underrated, as most of the data on value interference on science are obtained for social sciences and humanities. In particular, the interference of statistical choice for the outcomes of biomedical research results will have great focus. It is imperative to make this reflection to ensure that science will not be at the service of opportunistic interests, legitimizing actions with negative consequences for society. I will also consider how we can escape value interference or take benefit from it, being the awareness of it the key for the best practice of science.
+               </p>
+           </li>
+
+           <li>
+               <h3>Rebecca Richmond Smith</h3>
+               <i>
+                 Pigmentation in Cavefish
+               </i>
+               <p>
+                 I did an independent 10 week summer internship at Stowers Institute
+                 for Medical Research in America this summer. I would like to share
+                 what I have done to fellow undergraduates in an accessible in inspiring
+                 way. I would like to cover the need and use of new  model organisms
+                 (as cavefish are a new emerging model organism), and what exciting
+                 prospects can be gained from them (for example cavefish may provide
+                 the cure for diabetes!). I want to include how rewarding I have found
+                 research to be - inspiring all. I of course want to talk about some
+                 of the particulars of my project, pigmentation, which can also relate
+                 to the physical sciences in pigmentation throught the animal kingdom
+                 and why that colour appears that way physically and biologically.
+                 I will also touch on the end about science communication that I have
+                 experience with, why I find it and it is rewarding to share discoveries
+                 in the lab to others through communication so that translation into
+                 other applications and research can happen.
+               </p>
+           </li>
+
+           <li>
+               <h3>Sophia Cruwell</h3>
+               <i>
+                 Austism
+               </i>
+               <p>
+                 During the summer of 2016, I did a research internship at the Berlin
+                 School of Mind and Brain in Berlin. As part of this, I was involved
+                 in a study looking at Autism and Emotion Recognition. I am currently
+                 trying to develop this further, and would love to talk about my ideas.
+               </p>
+           </li>
+
+           <li>
+               <h3>Emma Flint &amp; Eliot Ford</h3>
+               <i>
+                 Text Normalisation of Non-standard words for Text-to-Speech
+               </i>
+               <p>
+                 "This summer, we completed a 10-week research project developing a system for Text Normalisation written in Python. Text Normalisation is a task which 'normalises' non-standard words such as numbers, abbreviations, acronyms, addresses etc. which have no dictionary entries or standard pronunciation rules, and are therefore difficult for a text to speech system to read out as they are. This is a difficult task because of the ambiguities of natural language - for example, '1996' could be read as 'nineteen ninety six' as a year, 'one nine nine six' as a digit, or 'one thousand nine hundred and ninety six' as a number. The main contributions of our research were releasing publicly available software for normalisation, making the system up-to-date and able to deal with hashtags, urls and email addresses etc. and developing an unsupervised approach for expanding abbreviations - predicting the expansion of an abbreviations based on a Corpus Lesk Word Sense Disambiguation algorithm. In this talk, we will discuss our research, as well as difficulties with Natural Language Processing tasks more generally, and will aim to bring together the areas of computer science and linguistics and increase interest in this highly important but lesser known area."
+               </p>
+           </li>
+
+           <li>
+               <h3>Virginia Rutten</h3>
+               <i>
+                 Whole-brain imaging of neural representations
+               </i>
+               <p>
+                 This summer I had the chance to work at the Janelia Research Campus
+                 in the Ahrens Lab. The lab has developed microscopy techniques which
+                 allow the imaging of the entire brain of young fish whilst they swim
+                 in a virtual-reality environment. The aim of my project was to investigate
+                 object recognition. I was firstly faced with the challenge of defining
+                 recognition: how do you know if a silent person recognises an object,
+                 let alone a young fish. Over the course of the summer I was able
+                 to create a novel behavioral assay and experimental setup (through
+                 3D printing and servo control) that allowed a larval zebrafish to
+                 perform spatial dispreference learning.<br><br>
+
+                 I would be excited to share the experience of working at Janelia
+                 and how I had to combine genetic tools, microscopy, machine learning
+                 and behavioural observations in order to tackle the question of adaptation
+                 and object recognition. I began university as a medical student and
+                 switched to engineering in my third year; I hope that my talk would
+                 give a concrete example of the possibility and benefits of learning
+                 techniques outside of one’s initial area of research and the real
+                 pleasure which comes from working at the interface of multiple disciplines.
+               </p>
+           </li>
+
+           <li>
+               <h3>James Roberts</h3>
+               <i>
+                 3D Printing
+               </i>
+               <p>
+                 Last year we started CU3D - The 3D Printing Society - with the aim
+                 of supporting student projects based around the use of 3D printers.
+                 Already it has become about much more than that, and we have started
+                 dealing with research, outreach and the projects lead by industry -
+                 such as the design of an all new flexible prosthetic hand. I will
+                 talk about the lessons we have learnt in our first year and how these
+                 will have an impact on both industry and society.
+               </p>
+           </li>
+
+           <li>
+               <h3>Tanmay Dixit</h3>
+               <i>
+                 Pollination ecology, Brain Architecture in insects and the link between
+                 them
+               </i>
+               <p>
+                 I studied Psiguria vines and pollinators (specfically Heliconius
+                 butterflies), in Panama, during Summer 2016. The flowers of Psiguria
+                 decrease in size over time (each day, a flower falls off and is replaced
+                 by a smaller one). We (myself and another student) tested hypotheses
+                 for adaptive explanations of this, with respect to the plant benefiting
+                 from specific pollinators, and visits from non-specific pollinators
+                 being detrimental due to pollen wastage. We tested for differences
+                 in number of visits of Heliconius (specific pollinators) and nonspecific
+                 pollinators to experimentally selected flowers, and our results supported
+                 the hypothesis that the decreasing flower size would result in a
+                 greater number of visits by Heliconius butterflies than non-specific
+                 pollinators, due to their good spatial memory. This would be a novel
+                 mechanism for attracting specific pollinators over nonspecific ones,
+                 and demonstrates a clear link between brain morphology and behavioural
+                 ecology. My talk would describe the study system, experimental methods,
+                 results and their implications for biology.
+               </p>
+           </li>
+
+           <li>
+               <h3>Amanda Lee</h3>
+               <i>
+                 Sustainable Development and Social Innovation in Jordan
+               </i>
+               <p>
+                 3Dmena is a startup in Jordan which acts as an innovation hub for Jordanians and refugees in Jordan. By running workshops, providing a space for additive manufacturing, supporting product development, and promoting start up ventures, 3Dmena showcases how regular people can use technology to better their lives. With Jordan's geographic location in the Middle East, 3Dmena is dedicated to helping to improve lives through science, technology, and innovation. I interned at 3Dmena in January and I would love to speak about my experiences while working there.
+               </p>
+           </li>
+
+           <li>
+               <h3>Kate Prescott</h3>
+               <i>
+                 Finding Inspiration for New Drugs
+               </i>
+               <p>
+                 During my internship at Shanghai Jiaotong University I worked on
+                 the synthesis of new drugs for Alzheimers disease. My talk would
+                 be about the inspiration for new drugs in the modern age - drawing
+                 on both my research last summer and recent publications in related
+                 topics. This is a very exciting and topical issue, particularly with
+                 concerns over antibiotic resistance for example, and brings together
+                 research from the medical, chemical and biological fields.
+               </p>
+           </li>
+
+           <li>
+               <h3>Agnes Cameron</h3>
+               <i>
+                 3D Holography
+               </i>
+               <p>
+                 An exploration of the 'magical' properties of the computer generated
+                 hologram, investigating the artistic and asthetic elements of this
+                 discipline from a technological basis. My MEng project explores projection
+                 mapping 3D holograms to deforming surfaces, and this talk would examine
+                 the basic elements of 3D holographic generation (from ~ first principles),
+                 and explore the technological and aesthetic uses of these techniques.
+               </p>
+           </li>
+
+           <li>
+               <h3>Alex Jenkins</h3>
+               <i>
+                 Testing General Relativity with Gravitational Waves
+               </i>
+               <p>
+                 "Last year, after decades of intensive theoretical and experimental work, the LIGO collaboration announced that they had made the first ever direct detection of gravitational waves - thereby confirming a prediction made by Einstein's general theory of relativity (GR) over a century ago. Since Einstein's initial prediction, GR has been embraced by the scientific community as our best working theory of gravity, having passed every experimental test thrown at it with flying colours. Crucially however, the only tests we've been able to perform so far have all been in a regime where gravity is relatively weak: e.g. the motion of planets in our solar system, or the distortion of the paths of photons around the Sun. One of the many reasons that the LIGO breakthrough is so exciting is that it will enable us to test gravity in the strong regime for the first time, where any faults in Einstein's theory will be laid bare. One way we can do this is by looking at the polarisation of gravitational waves. While this could make for an incredibly powerful test for general relativity, it is hindered by the number of detectors that LIGO has at its disposal. In my talk, I will show how we can use Bayesian methods to overcome this limitation and begin the strongest-ever test of GR."
+               </p>
+           </li>
+
+           <!--
+           <li>
+               <h3>Speaker</h3>
+               <i>
+                 Title
+               </i>
+               <p>
+                 Description
+               </p>
+           </li>
+           -->
+
+    </ul>
+</div>
+</div>
+
+<h1 style="background-color:transparent;">Schedule</h1>
+<br>
+<br>
+<br>
+<section class="row schedule">
+<div class="container" style="background-image:none;">
+  <table>
+
+    <thead>
+      <tr>
+        <th scope="row">
+          Day 1 (March 18th)
+        </th>
+        <td colspan="3">
+        </td>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">
+          <time>10:00</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          Registration
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>10:30</time>
+        </th>
+        <td colspan="3">
+          Keynote
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>11:30</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Alex Jenkins</h4>
+          <em>Testing General Relativity with Gravitational Waves</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>11:50</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Sophia Cruwell</h4>
+          <em>Autism</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>12:10</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Kate Prescott</h4>
+          <em>Finding Inspiration for New Drugs</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>12:30</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          Lunch
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>13:30</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Sophie Gill</h4>
+          <em>Global Trends in Volcanic Arc Sulfur Outgassing</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>13:50</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>James Roberts</h4>
+          <em>3D Printing</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>14:10</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Rebecca Richmond-Smith</h4>
+          <em>Pigmentation in Cavefish</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>14:30</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Amanda Lee</h4>
+          <em>Sustainable Development and Social Innovation in Jordan</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>14:50</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Emma Flint &amp; Eliot Ford</h4>
+          <em>Text Normalisation of Non-standard words for Text-to-Speech</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>14:50</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Maria Tang</h4>
+          <em>What distance metrics best model the spatial transmission of the
+          2009 swine flu pandemic in the US?</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>15:30</time>
+        </th>
+        <td colspan="3">
+          Keynote
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>17:00</time>
+        </th>
+        <td colspan="3">
+          Closing
+        </td>
+      </tr>
+
+    </tbody>
+
+  </table>
+</div>
+
+
+</section>
+
+<br>
+<br>
+
+<section class="row schedule">
+<div class="container" style="background-image:none;">
+  <table>
+
+    <thead>
+      <tr>
+        <th scope="row">
+          Day 2 (March 19th)
+        </th>
+        <td colspan="3">
+        </td>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <th scope="row">
+          <time>10:00</time>
+        </th>
+        <td colspan="3">
+          Registration
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>10:30</time>
+        </th>
+        <td colspan="3">
+          Keynote
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>11:30</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Tejal Shanbhag</h4>
+          <em>Gas Cylinder Vibration Characterisation</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>11:50</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>TPP Intern</h4>
+          <em>A talk by TPP</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>12:10</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Mariana Alves</h4>
+          <em>Title</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>12:30</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Agnes Cameron</h4>
+          <em>3D Holography</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>13:00</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          Lunch
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>13:50</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Patrick Lundgren</h4>
+          <em>Planetary Protection - the importance of microbial quantification</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>14:10</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Aatif Syed</h4>
+          <em>Birmingham Children's Hospital - a model of how young people can
+          shape science and research</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>14:30</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Michał Bączyk</h4>
+          <em>Bottle Oscillators - hydrodynamics, synchronisation theorem;
+          Fun doing homemade science/research</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>14:50</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Virginia Rutten</h4>
+          <em>Whole-brain imaging of neural representations</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>15:10</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Nick Kateris</h4>
+          <em>Aerosol Particle Coagulation CFD</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>15:30</time>
+        </th>
+        <td class="schedule-offset" colspan="3">
+          <h4>Tanmay Dixit</h4>
+          <em>Pollination ecology, Brain Architecture in insects and the link between
+          them</em>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>16:00</time>
+        </th>
+        <td colspan="3">
+          Keynote
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">
+          <time>17:00</time>
+        </th>
+        <td colspan="3">
+          Closing
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+</section>

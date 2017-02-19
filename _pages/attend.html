@@ -4,10 +4,22 @@ title: Attend
 layout: inscite
 ---
 
-{% if site.phase == 3 %}
+{% if site.phase == 2 %}
 
 <div class="emphasize">
   <h2>Please follow us on <a href="https://facebook.com/insciteco/">Facebook</a> for updates on ticket release and all things IN[SCI]TE. Tickets will be released for purchase in Lent term.</h2>
+</div>
+
+{% endif %}
+
+{% if site.phase == 3 %}
+
+<div class="emphasize">
+  <h2>Tickets are on sale now at &pound;5!</h2>
+  <br><br>
+  <a class="btn btn-success" href="https://joinagora.com/events/12793/" target="_blank"><h4>Buy now</h4></a>
+  <br><br>
+  <h2>For details about the event, please visit our <a href="{{ site.baseurl }}/2017">2017</a> page.</h2>
 </div>
 
 {% endif %}

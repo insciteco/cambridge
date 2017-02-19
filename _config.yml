@@ -13,12 +13,14 @@ phase: 3 # the phase of the current year's event
 
 # Navigation
 nav:
+  - name:           "about"
+    href:           "/about"
   - name:           "committee"
     href:           "/committee"
-  - name:           "sponsor"
-    href:           "/sponsor"
-  - name:           "talk"
-    href:           "/talk"
+  - name:           "sponsors"
+    href:           "/sponsors"
+# - name:           "talk"
+#   href:           "/talk"
   - name:           "attend"
     href:           "/attend"
   - name:           "2017"
