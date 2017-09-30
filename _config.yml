@@ -13,10 +13,12 @@ phase: 2 # the phase of the current year's event
 
 # Navigation
 nav:
+  - name:           "about"
+    href:           "/about"
   - name:           "committee"
     href:           "/committee"
-  - name:           "sponsor"
-    href:           "/sponsor"
+  - name:           "sponsors"
+    href:           "/sponsors"
   - name:           "talk"
     href:           "/talk"
   - name:           "attend"
@@ -25,7 +27,7 @@ nav:
     href:           "/2017"
   - name:           "contact"
     href:           "/contact"
-        
+
 
 include: ['_pages']
 
